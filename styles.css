@@ -21,7 +21,7 @@ svg {
     width: 160px; /* Ancho */
     height: 18px; /* Alto */
     background-color: brown; /* Color de fondo */
-    border: 5px solid black   ack; /* Borde */
+    border: 5px solid black; /* Borde */
     position: absolute;
     top: 50%;
     left: 605px;
@@ -36,7 +36,7 @@ svg {
     height: 100px;
     background-color: brown;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-    border: 2px solid bl    ack; /* Borde */
+    border: 2px solid black; /* Borde */
     position: absolute;
     top: 50%;
     left: 44.7%;
@@ -146,27 +146,58 @@ svg {
     }
 }
 
+/* 📱 Móviles Pequeños (Hasta 480px) */
 @media (max-width: 480px) {
     .rectangulo {
-        width: 100px;  /* Ajuste en el ancho */
-        height: 14px;  /* Ajuste en la altura */
+        width: 80px;
+        height: 10px;
     }
     .maceta {
-        width: 60%;  /* Ajuste en el tamaño de la maceta */
-        height: 80px;  /* Ajuste en la altura */
+        width: 50%;
+        height: 70px;
     }
     .tierra {
-        width: 60%;  /* Ajuste en el tamaño de la tierra */
-        height: 30px;  /* Ajuste en la altura */
+        width: 50%;
+        height: 25px;
     }
     .carta {
-        width: 90px;  /* Ajuste en el tamaño de la carta */
-        font-size: 14px;  /* Ajuste en el tamaño de la fuente */
+        width: 80px;
+        font-size: 12px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .texto-san-valentin {
-        font-size: 24px;  /* Ajuste en el tamaño del texto */
+        font-size: 20px;
     }
     #girasol {
-        width: 70%;  /* Ajuste en el tamaño del girasol */
+        width: 60%;
+    }
+}
+
+/* 📱 Móviles Medianos (Hasta 768px) */
+@media (max-width: 768px) {
+    .rectangulo {
+        width: 120px;
+        height: 14px;
+    }
+    .maceta {
+        width: 45%;
+        height: 85px;
+    }
+    .tierra {
+        width: 45%;
+        height: 30px;
+    }
+    .carta {
+        width: 90px;
+        font-size: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .texto-san-valentin {
+        font-size: 24px;
+    }
+    #girasol {
+        width: 70%;
     }
 }
