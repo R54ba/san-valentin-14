@@ -22,7 +22,62 @@ svg {
     height: 18px; /* Alto */
     background-color: brown; /* Color de fondo */
     border: 5px solid black; /* Borde */
-    position: absolute;
+    /* 📱 Móviles Pequeños (Hasta 480px) */
+@media (max-width: 480px) {
+    .rectangulo {
+        width: 80px;
+        height: 10px;
+    }
+    .maceta {
+        width: 50%;
+        height: 70px;
+    }
+    .tierra {
+        width: 50%;
+        height: 25px;
+    }
+    .carta {
+        width: 80px;
+        font-size: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .texto-san-valentin {
+        font-size: 20px;
+    }
+    #girasol {
+        width: 60%;
+    }
+}
+
+/* 📱 Móviles Medianos (Hasta 768px) */
+@media (max-width: 768px) {
+    .rectangulo {
+        width: 120px;
+        height: 14px;
+    }
+    .maceta {
+        width: 45%;
+        height: 85px;
+    }
+    .tierra {
+        width: 45%;
+        height: 30px;
+    }
+    .carta {
+        width: 90px;
+        font-size: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .texto-san-valentin {
+        font-size: 24px;
+    }
+    #girasol {
+        width: 70%;
+    }
+}
+
     top: 50%;
     left: 605px;
     transform: translate(-50%, -50%); /* Ajusta el centro exacto */ 
@@ -177,6 +232,7 @@ svg {
 /* 📱 Móviles Medianos (Hasta 768px) */
 @media (max-width: 768px) {
     .rectangulo {
+        
         width: 120px;
         height: 14px;
     }
